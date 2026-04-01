@@ -1,0 +1,17 @@
+{
+  "name": "schools-flats",
+  "version": "1.0.0",
+  "description": "Visualize top Moscow schools on Yandex Maps",
+  "private": true,
+  "scripts": {
+    "scrape": "node scrape.js",
+    "serve": "http-server -p 8080 -o --cors -c-1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

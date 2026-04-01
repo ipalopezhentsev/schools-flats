@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.krylatskoye.ru)",
+      "WebFetch(domain:yandex.ru)",
+      "WebFetch(domain:yandex.com)",
+      "WebFetch(domain:developer.tech.yandex.ru)",
+      "Bash(npm install:*)",
+      "Bash(node diagnose.js)",
+      "Bash(node -e ':*)",
+      "Bash(node scrape.js)",
+      "Bash(start \"c:/Users/ilyap/dev/github/schools-flats/index.html\")",
+      "Bash(npm run:*)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /F /PID 18368)",
+      "Bash(taskkill //F //PID 18368)",
+      "Bash(node -e \"const d = require\\('./schools-flats/schools.json'\\); const s = d.schools.find\\(s => s.name.includes\\('1329'\\)\\); console.log\\(JSON.stringify\\(s, null, 2\\)\\);\")",
+      "Bash(node -e \"const d = require\\('./schools.json'\\); const s = d.schools.find\\(s => s.name.includes\\('1329'\\)\\); console.log\\(JSON.stringify\\(s, null, 2\\)\\);\")",
+      "Bash(node -e \"const d=require\\('./schools-flats/schools.json'\\); const total=d.schools.reduce\\(\\(s,sc\\)=>s+sc.buildings.length,0\\); const missing=d.schools.filter\\(sc=>sc.buildings.length===0\\).length; console.log\\('buildings:',total,'missing:',missing,'found:',\\(400-missing\\)\\);\")",
+      "Bash(node -e \"const d=require\\('./schools.json'\\); const total=d.schools.reduce\\(\\(s,sc\\)=>s+sc.buildings.length,0\\); const missing=d.schools.filter\\(sc=>sc.buildings.length===0\\).length; console.log\\('Total buildings:',total,'  Schools with results:',\\(400-missing\\),'/ 400  Missing:',missing\\);\")"
+    ]
+  }
+}

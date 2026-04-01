@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Scrape schools",
+      "detail": "Fetch school data and geocode buildings (~3-5 min). Writes data.js, config.js, schools.json.",
+      "type": "shell",
+      "command": "node scrape.js",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Open viewer",
+      "detail": "Start local HTTP server on port 8080 and open the map in the browser.",
+      "type": "shell",
+      "command": "npm run serve",
+      "group": "test",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
